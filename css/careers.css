@@ -1,0 +1,1043 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ================= GLOBAL ================= */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    text-decoration:none;
+    list-style:none;
+
+}
+
+
+
+html{
+
+    font-size:62.5%;
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    overflow-x:hidden;
+    background:#ffffff;
+
+}
+
+
+
+section{
+
+    padding:8rem 8%;
+
+}
+
+
+
+::selection{
+
+    background:#00bfff;
+    color:white;
+
+}
+
+
+
+
+
+/* ================= HEADER ================= */
+
+
+.header{
+    width:100%;
+    height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    z-index:1000;
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(10px);
+}
+
+.header .logo img{
+    width:160px;
+    height:50px;
+    object-fit:contain;
+}
+.navbar ul{
+    display:flex;
+    gap:3rem;
+}
+.navbar ul li a{
+    color:white;
+    font-size:1.6rem;
+    font-weight:500;
+    transition:.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color:#00bfff;
+}
+
+.header .fa-bars{
+    display:none;
+    color:white;
+    font-size:3rem;
+    cursor:pointer;
+}
+
+/* ================= CAREER HERO ================= */
+
+
+.career-hero{
+
+
+    width:100%;
+
+    height:75vh;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+
+}
+
+
+
+.career-hero img{
+
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+
+}
+
+
+
+.hero-overlay{
+
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.65)
+    );
+
+
+}
+
+
+
+.hero-content{
+
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+
+}
+
+
+
+.hero-content h1{
+
+
+    font-size:5rem;
+
+    font-weight:700;
+
+    letter-spacing:.2rem;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    font-size:2rem;
+
+    margin-top:1.5rem;
+
+
+}
+
+
+
+
+
+
+
+/* ================= HEADING ================= */
+
+
+.career-heading{
+
+
+    text-align:center;
+
+    padding-bottom:2rem;
+
+
+}
+
+
+
+.heading{
+
+
+    font-size:4rem;
+
+    color:#002e5f;
+
+    position:relative;
+
+    display:inline-block;
+
+
+}
+
+
+
+.heading::before,
+.heading::after{
+
+
+    content:"";
+
+    position:absolute;
+
+    width:35px;
+
+    height:35px;
+
+    border-top:4px solid #00bfff;
+
+    border-left:4px solid #00bfff;
+
+
+}
+
+
+
+.heading::before{
+
+
+    left:-45px;
+
+    top:5px;
+
+
+}
+
+
+
+.heading::after{
+
+
+    right:-45px;
+
+    bottom:5px;
+
+    transform:rotate(180deg);
+
+
+}
+
+
+
+.career-heading p{
+
+
+    margin-top:2rem;
+
+    font-size:1.8rem;
+
+    color:#555;
+
+
+}
+
+
+
+
+
+/* ================= FORM CONTAINER ================= */
+
+
+.career{
+
+
+    width:80%;
+
+    margin:4rem auto;
+
+    padding:4rem;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 40px rgba(0,0,0,.12);
+
+
+}
+
+
+
+.career-form{
+
+
+    width:100%;
+
+
+}
+
+
+
+.career-form input,
+.career-form textarea{
+
+
+    width:100%;
+
+    padding:1.5rem 2rem;
+
+    margin-bottom:2rem;
+
+    border-radius:50px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    font-size:1.5rem;
+
+    transition:.3s;
+
+
+}
+
+
+
+.career-form input:focus,
+.career-form textarea:focus{
+
+
+    border-color:#00bfff;
+
+    box-shadow:0 0 10px rgba(0,191,255,.2);
+
+
+}
+
+
+
+
+
+
+.career-form textarea{
+
+
+    height:150px;
+
+    border-radius:20px;
+
+    resize:none;
+
+
+}
+
+
+
+.form-title{
+
+
+    font-size:2rem;
+
+    color:#002e5f;
+
+    margin:1rem 0 2rem;
+
+
+}
+
+
+
+
+
+
+/* ================= JOB OPTIONS ================= */
+
+
+.job-options{
+
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:2rem;
+
+    margin-bottom:2rem;
+
+
+}
+
+
+
+.job-options label{
+
+
+    font-size:1.5rem;
+
+    color:#333;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.job-options input{
+
+
+    width:auto;
+
+    margin-right:.5rem;
+
+
+}
+
+
+
+
+
+
+/* ================= FILE ================= */
+
+
+.upload{
+
+
+    font-size:1.5rem;
+
+    border:none!important;
+
+}
+
+
+
+
+/* ================= BUTTON ================= */
+
+
+.career-form-btn{
+
+
+    width:180px!important;
+
+    background:#002e5f;
+
+    color:white;
+
+    border:none!important;
+
+    cursor:pointer;
+
+    font-size:1.6rem!important;
+
+    transition:.3s;
+
+
+}
+
+
+
+.career-form-btn:hover{
+
+
+    background:#00bfff;
+
+    transform:translateY(-5px);
+
+
+}
+
+/* ================= FOOTER ================= */
+
+
+.footer{
+
+
+    background:#111;
+
+    color:white;
+
+}
+
+
+
+.footer-top{
+
+
+    background:#002e5f;
+
+    padding:6rem 8% 4rem;
+
+
+}
+
+
+
+.footer h4{
+
+
+    font-size:2rem;
+
+    margin-bottom:2rem;
+
+    color:white;
+
+    position:relative;
+
+
+}
+
+
+
+.footer h4::after{
+
+
+    content:"";
+
+    display:block;
+
+    width:45px;
+
+    height:3px;
+
+    background:#00bfff;
+
+    margin-top:1rem;
+
+
+}
+
+
+
+
+
+.footer-links ul{
+
+
+    padding:0;
+
+
+}
+
+
+
+.footer-links ul li{
+
+
+    margin-bottom:1.2rem;
+
+
+}
+
+
+
+.footer-links ul li a{
+
+
+    color:white;
+
+    font-size:1.5rem;
+
+    transition:.3s;
+
+
+}
+
+
+
+.footer-links ul li a:hover{
+
+
+    color:#00bfff;
+
+    padding-left:8px;
+
+
+}
+
+
+
+.footer-links i{
+
+
+    color:#00bfff;
+
+    margin-right:8px;
+
+
+}
+
+
+
+
+
+
+
+/* ================= CONTACT ================= */
+
+
+.footer-contact p{
+
+
+    color:white;
+
+    font-size:1.5rem;
+
+    line-height:2.5rem;
+
+
+}
+
+
+
+
+.social-links{
+
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-top:2rem;
+
+
+}
+
+
+
+.social-links a{
+
+
+    width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#002e5f;
+
+    font-size:1.8rem;
+
+    transition:.3s;
+
+
+}
+
+
+
+.social-links a:hover{
+
+
+    background:#00bfff;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+/* ================= NEWSLETTER ================= */
+
+
+.footer-newsletter p{
+
+
+    font-size:1.5rem;
+
+    line-height:2.5rem;
+
+
+}
+
+
+
+.footer-newsletter form{
+
+
+    display:flex;
+
+    margin-top:2rem;
+
+
+}
+
+
+
+.footer-newsletter input[type="email"]{
+
+
+    width:70%;
+
+    padding:1rem;
+
+    border:none;
+
+    outline:none;
+
+    font-size:1.4rem;
+
+
+}
+
+
+
+.footer-newsletter input[type="submit"]{
+
+
+    width:30%;
+
+    border:none;
+
+    background:#00bfff;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:1.4rem;
+
+
+}
+
+
+
+.footer-newsletter input[type="submit"]:hover{
+
+
+    background:white;
+
+    color:#002e5f;
+
+
+}
+
+
+
+
+
+/* ================= COPYRIGHT ================= */
+
+
+.copyright{
+
+
+    background:#111;
+
+    padding:2rem;
+
+    text-align:center;
+
+    font-size:1.5rem;
+
+    color:white;
+
+
+}
+
+
+
+.copyright strong{
+
+
+    color:#00bfff;
+
+
+}
+
+
+
+
+
+
+
+
+/* ================= BACK TO TOP ================= */
+
+
+.back-to-top{
+
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:45px;
+
+    height:45px;
+
+    background:#00bfff;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    border-radius:50%;
+
+    z-index:999;
+
+
+}
+
+
+
+.back-to-top:hover{
+
+
+    background:#002e5f;
+
+    color:white;
+
+
+}
+
+
+
+
+
+
+
+/* ================= TABLET ================= */
+
+
+@media(max-width:1000px){
+
+
+
+html{
+
+    font-size:55%;
+
+}
+
+
+
+.header{
+
+
+    padding:0 4%;
+
+
+}
+
+
+
+.header .fa-bars{
+
+
+    display:block;
+
+
+}
+
+
+
+.navbar{
+
+
+    position:absolute;
+
+    top:80px;
+
+    left:-100%;
+
+    width:100%;
+
+    background:#002e5f;
+
+    transition:.4s;
+
+
+}
+
+
+
+.navbar.active{
+
+
+    left:0;
+
+
+}
+
+
+
+.navbar ul{
+
+
+    flex-direction:column;
+
+    padding:3rem;
+
+
+}
+
+
+
+.navbar ul li{
+
+
+    margin:1rem;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-size:4rem;
+
+
+}
+
+
+
+.career{
+
+
+    width:90%;
+
+    padding:3rem;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:600px){
+
+
+
+html{
+
+    font-size:50%;
+
+}
+
+.career-hero{
+    height:60vh;
+}
+
+.hero-content h1{
+    font-size:3.2rem;
+}
+
+.hero-content p{
+    font-size:1.6rem;
+}
+
+.heading{
+    font-size:3rem;
+}
+
+.career{
+    width:95%;
+    padding:2rem;
+}
+
+.job-options{
+    flex-direction:column;
+}
+
+.footer-newsletter form{
+    flex-direction:column;
+}
+
+.footer-newsletter input[type="email"],
+.footer-newsletter input[type="submit"]{
+    width:100%;
+    margin-bottom:1rem;
+}
+}
